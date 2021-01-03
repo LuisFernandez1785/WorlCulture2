@@ -1,0 +1,43 @@
+{% extends 'LayoutA.html'%} {% block body %}
+<div class="col-md-8 offset-md-2">
+    <div class="card card-body">
+        <form action="/updatePedidos/{{Pedido.0}}" method="POST">
+
+            <div class="form-group">
+                <input type="text" name="Nombre" placeholder="Nombre" value="{{Pedido.1}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="Usuario" placeholder="Usuario" value="{{Pedido.2}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="Direccion" placeholder="Direccion" value="{{Pedido.3}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="Contenido" placeholder="Contenido" value="{{Pedido.4}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="Costo" placeholder="Costo" value="{{Pedido.5}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="CostoEnvio" placeholder="CostoEnvio" value="{{Pedido.6}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="CodigoRastreo" placeholder="CodigoRastreo" value="{{Pedido.7}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                    Guardar
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

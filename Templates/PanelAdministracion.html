@@ -1,0 +1,25 @@
+{% extends 'LayoutA.html' %} {% block body %}
+
+
+<div class="row">
+    <div class="col-md-6 ">
+        <div class="card card-body">
+
+
+            <center>
+                <p id="hola"> <strong>Hola!</strong>
+                    <br> Bienvenido al panel de administracion
+                </p>
+                <img id="admin" src="{{ url_for('static', filename='img/worldculturee.png') }}" alt="admin">
+
+            </center>
+
+        </div>
+    </div>
+    <div class="col-md-6 ">
+        <div class="card card-body">
+            <img src="{{ url_for('static', filename='img/924874.png') }}" alt="admin">
+        </div>
+    </div>
+
+    {% endblock %}
